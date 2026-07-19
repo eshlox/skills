@@ -1,6 +1,6 @@
 ---
 name: implement-change
-description: Build an approved or clearly-scoped code change as a surgical diff with focused tests, updated docs, and no scope creep. Use this as the coding step once the direction is settled - bug fixes, small features, and well-understood edits - especially in a repo with an AGENTS.md contract. If the change is still ambiguous or material and not yet agreed, use shape-change first. This is the build step, not the design step.
+description: Build an approved or clearly-scoped code change as a surgical diff with focused tests, updated docs, and no scope creep. Use this as the coding step once the direction is settled - bug fixes, small features, and well-understood edits - especially in a repo with an AGENTS.md contract. If the change is still ambiguous or material and not yet agreed, use plan-change first. This is the build step, not the design step.
 ---
 
 # Implement an Approved Change
@@ -12,7 +12,7 @@ description: Build an approved or clearly-scoped code change as a surgical diff 
 - The expected scope is understood.
 - There is no unresolved dependency, schema, API, security, compatibility, architecture, or destructive-operation decision.
 
-If an entry condition fails, stop and use `shape-change`.
+If an entry condition fails, stop and use `plan-change`.
 
 ## Process
 

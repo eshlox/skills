@@ -1,9 +1,9 @@
 ---
-name: shape-change
-description: Shape and get sign-off on a non-trivial or ambiguous code change BEFORE editing anything - restate the goal, compare credible options, recommend one, and define acceptance criteria. Use whenever a request touches new features, public APIs, schemas, dependencies, architecture, security, performance, or migrations, or when requirements are uncertain, even if the user only says "add X" or "change Y" without asking for a plan. Stop at the agreed plan and do not write production code. Skip only for tiny, self-contained, low-risk edits, which go straight to implement-change.
+name: plan-change
+description: Plan and get sign-off on a non-trivial or ambiguous code change BEFORE editing anything - restate the goal, compare credible options, recommend one, and define acceptance criteria. Use whenever a request touches new features, public APIs, schemas, dependencies, architecture, security, performance, or migrations, or when requirements are uncertain, even if the user only says "add X" or "change Y" without asking for a plan. Stop at the agreed plan and do not write production code. Skip only for tiny, self-contained, low-risk edits, which go straight to implement-change.
 ---
 
-# Shape a Change
+# Plan a Change
 
 ## Purpose
 
@@ -17,7 +17,7 @@ Reach an informed, approved implementation direction before code changes consume
 - Challenge assumptions with evidence, not reflexive disagreement.
 - Compare alternatives only when they are genuinely credible and materially different.
 - Prefer the smallest proven solution that meets the current requirements.
-- Do not create code, dependencies, schemas, migrations, or configuration during shaping.
+- Do not create code, dependencies, schemas, migrations, or configuration during planning.
 
 ## Process
 

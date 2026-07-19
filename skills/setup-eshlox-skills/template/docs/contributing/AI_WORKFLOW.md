@@ -11,7 +11,7 @@ The baseline is distributed as agent skills, installed with `pnpm dlx skills add
 
 - `AGENTS.md` is the canonical cross-agent contract. Its top block is managed by the setup-eshlox-skills skill. Its project section is owned by this repository.
 - `.claude/CLAUDE.md` imports the canonical contract for Claude Code without duplicating it.
-- The workflow skills (`shape-change`, `implement-change`, `evaluate-dependency`, `review-change`, `verify-change`) are installed separately as agent skills and discovered by each agent natively.
+- The workflow skills (`plan-change`, `implement-change`, `evaluate-dependency`, `review-change`, `verify-change`) are installed separately as agent skills and discovered by each agent natively.
 - `docs/` separates current project truth, decisions, plans, and unapproved ideas.
 - `AI_TASK_TEMPLATE.md` gives each task an explicit goal, context, constraints, scope, and definition of done.
 
@@ -44,12 +44,12 @@ After the first run, complete the project section of `AGENTS.md` and the bracket
 Claude Code loads `.claude/CLAUDE.md`, which imports `AGENTS.md`. `pnpm dlx skills add` installs the workflow skills where Claude Code discovers them, so you can invoke one by name, for example:
 
 ```text
-Use the shape-change skill for this task.
+Use the plan-change skill for this task.
 ```
 
 ### Codex
 
-Codex loads `AGENTS.md`. `pnpm dlx skills add` installs the skills into Codex's skill directory, so invoke one by name, for example `$shape-change`, or name the workflow in the prompt when the interface does not expose skill invocation.
+Codex loads `AGENTS.md`. `pnpm dlx skills add` installs the skills into Codex's skill directory, so invoke one by name, for example `$plan-change`, or name the workflow in the prompt when the interface does not expose skill invocation.
 
 ### OpenCode
 
@@ -78,7 +78,7 @@ The agent should inspect, state a brief approach, implement, review the diff, up
 Start with:
 
 ```text
-Use the shape-change skill.
+Use the plan-change skill.
 Do not edit code yet. Interview me about material uncertainty, challenge weak assumptions, compare credible solutions, recommend the simplest proven option, and wait for approval.
 ```
 

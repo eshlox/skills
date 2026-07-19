@@ -6,13 +6,12 @@ entirely as agent skills and installable with `pnpm dlx skills add eshlox/skills
 
 It has two parts:
 
-- **Workflow skills** - `shape-change`, `implement-change`, `evaluate-dependency`,
+- **Workflow skills** - `plan-change`, `implement-change`, `evaluate-dependency`,
   `review-change`, `verify-change`. Bare, descriptive names, loaded on demand
   when their description matches the task.
 - **`setup-eshlox-skills`** - a skill that installs and updates the always-on
   operating contract (`AGENTS.md`) and the `docs/` scaffold in a project. It works
-  interactively (explore, propose, confirm, write), like Matt Pocock's
-  `setup-matt-pocock-skills`.
+  interactively: explore, propose, confirm, then write.
 
 Nothing here assumes a language, framework, or package manager. Per-repo tooling
 lives only in the project section of `AGENTS.md` and in `docs/QUALITY.md`.
@@ -25,14 +24,13 @@ to update.
 ## Naming and namespacing
 
 Agent skills install into a flat, per-agent directory keyed by a bare `name`;
-there is no npm-style `@scope`. So the convention (as in
-[mattpocock/skills](https://github.com/mattpocock/skills)) is:
+there is no npm-style `@scope`. So the convention is:
 
 - **Workflow skills use bare descriptive names.** The namespace is the install
   source (`pnpm dlx skills add eshlox/skills`), not the skill name.
 - **The setup skill is prefixed**, because `install`/`update`/`setup` are
-  high-collision generic verbs. `setup-eshlox-skills` follows Matt Pocock's
-  `setup-matt-pocock-skills` pattern: unmistakably yours, collision-free.
+  high-collision generic verbs. `setup-eshlox-skills` namespaces them so they are
+  unmistakably yours and collision-free.
 
 Rename `eshlox` to your own handle or org to make the kit yours: rename the
 `skills/setup-eshlox-skills/` directory and update the `name:` in its `SKILL.md`.
@@ -71,7 +69,7 @@ again. Install and update are the same idempotent operation:
 ```
 skills/                          # repo root (eshlox/skills)
 ├── skills/                      # the installable skills (pnpm dlx skills add reads here)
-│   ├── shape-change/SKILL.md
+│   ├── plan-change/SKILL.md
 │   ├── implement-change/SKILL.md
 │   ├── evaluate-dependency/SKILL.md
 │   ├── review-change/SKILL.md

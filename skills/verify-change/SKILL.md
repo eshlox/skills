@@ -1,6 +1,6 @@
 ---
 name: verify-change
-description: Before declaring a change complete, prove it - map every acceptance criterion and risk to a concrete test, command, scan, or runtime check, run the repository's required quality gates, and report an evidence table. Use before any "done", "passing", "secure", or "faster" claim, as the final step of the shape / implement / review / verify workflow. This focuses on acceptance-criteria evidence and the repo's defined checks; for open-ended end-to-end exploration of a running app, the verify skill is more specialized.
+description: Before declaring a change complete, prove it - map every acceptance criterion and risk to a concrete test, command, scan, or runtime check, run the repository's required quality gates, and report an evidence table. Use before any "done", "passing", "secure", or "faster" claim, as the final step of the plan / implement / review / verify workflow. This focuses on acceptance-criteria evidence and the repo's defined checks; for open-ended end-to-end exploration of a running app, the verify skill is more specialized.
 ---
 
 # Verify a Change

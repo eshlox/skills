@@ -15,7 +15,7 @@ third-party source and skill name before relying on it (the ecosystem moves fast
 ## How to use this file
 
 - **Install / refresh everything:** run the commands in sections 1 and 2.
-- **Update:** run them again. Each source pulls its own latest independently - my spine from me, Matt's from Matt.
+- **Update:** run them again. Each source pulls its own latest independently, from its own origin.
 - **Pin a version:** append a git ref to freeze it (the `skills` CLI accepts git URLs, e.g. a `#<tag-or-commit>` suffix). Do this for any dependency you do not want moving under you.
 - **After a big borrowed update:** re-check for trigger overlap with my spine (regenerate trigger evals with the `skill-creator` skill if I want to measure it).
 - `-g` installs globally (all projects). Drop it to install into the current project only.
@@ -26,7 +26,7 @@ third-party source and skill name before relying on it (the ecosystem moves fast
 pnpm dlx skills add -g eshlox/skills
 ```
 
-Installs: `shape-change`, `implement-change`, `review-change`, `verify-change`,
+Installs: `plan-change`, `implement-change`, `review-change`, `verify-change`,
 `evaluate-dependency`, and `setup-eshlox-skills`. These are absorbed, not
 borrowed: I own them and never sync them from anyone.
 
@@ -34,14 +34,14 @@ borrowed: I own them and never sync them from anyone.
 
 Broad, cross-stack sources. Install globally (`-g`) so they apply everywhere, but
 browse with `--list` first and add only skills that fill a real gap. Skip anything
-that overlaps my spine (shape / implement / review / verify / evaluate-dependency)
+that overlaps my spine (plan / implement / review / verify / evaluate-dependency)
 or the built-ins in section 4.
 
 ```bash
 # Anthropic's official skills - broad, high quality
 pnpm dlx skills add -g anthropics/skills --list        # browse, then add specific ones
 
-# Matt Pocock's skills - engineering, TypeScript-leaning
+# general engineering skills, TypeScript-leaning
 pnpm dlx skills add -g mattpocock/skills --list        # e.g. diagnosing-bugs fills my debugging gap
 
 # optional specialist security (confirm each repo's install method)

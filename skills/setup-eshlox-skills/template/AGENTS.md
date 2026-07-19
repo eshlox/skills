@@ -37,7 +37,7 @@ If these sources conflict, or an assumption could change behavior, scope, data, 
 - Consolidate related questions when practical. Continue until material uncertainty is resolved, then stop asking.
 - Respect the user's final informed decision unless it conflicts with safety or repository policy.
 
-For a clear, bounded, low-risk task, inspect the relevant code, state a brief approach, and proceed. For ambiguous or material work, use the `shape-change` skill and do not edit until the direction is approved.
+For a clear, bounded, low-risk task, inspect the relevant code, state a brief approach, and proceed. For ambiguous or material work, use the `plan-change` skill and do not edit until the direction is approved.
 
 ## Approval boundary
 
@@ -146,7 +146,7 @@ When approval is required, state the decision, credible options, recommendation,
 
 These workflows ship as agent skills, installed separately from this contract (see the project section below for the install command). Invoke the relevant skill by name before performing the workflow:
 
-- `shape-change`: shape ambiguous or material work before editing.
+- `plan-change`: plan ambiguous or material work before editing.
 - `implement-change`: implement an approved change.
 - `evaluate-dependency`: evaluate a dependency before any manifest or lockfile change.
 - `review-change`: review a completed diff.
@@ -178,7 +178,7 @@ State:
 
 ## Agent skills
 
-The workflow skills named in Skill routing (`shape-change`, `implement-change`, `evaluate-dependency`, `review-change`, `verify-change`) are distributed separately and installed with:
+The workflow skills named in Skill routing (`plan-change`, `implement-change`, `evaluate-dependency`, `review-change`, `verify-change`) are distributed separately and installed with:
 
 ```
 pnpm dlx skills add eshlox/skills

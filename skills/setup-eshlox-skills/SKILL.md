@@ -11,7 +11,7 @@ This skill plants and updates two things in the current repository:
 - `AGENTS.md` - the always-on engineering operating contract.
 - `docs/` - the documentation scaffold (authority map, templates, plans, decisions).
 
-The workflow skills (`shape-change`, `implement-change`, `evaluate-dependency`, `review-change`, `verify-change`) are separate agent skills and are not planted here.
+The workflow skills (`plan-change`, `implement-change`, `evaluate-dependency`, `review-change`, `verify-change`) are separate agent skills and are not planted here.
 
 Install and update are the same operation. On a fresh repo it installs; run again later and it refreshes the shared parts while leaving your own edits alone.
 

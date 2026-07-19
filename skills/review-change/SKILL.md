@@ -1,6 +1,6 @@
 ---
 name: review-change
-description: Review a finished change by hand against the approved task and this repository's operating contract - scope creep, correctness, security, simplicity, tests, docs, dependencies, and unsupported performance claims. Report findings only and do not edit unless asked. Use as the review step of the shape / implement / review / verify workflow, especially in repos with an AGENTS.md contract. For a heavier multi-agent standards-and-spec review of a whole branch or PR, use the separate code-review skill instead.
+description: Review a finished change by hand against the approved task and this repository's operating contract - scope creep, correctness, security, simplicity, tests, docs, dependencies, and unsupported performance claims. Report findings only and do not edit unless asked. Use as the review step of the plan / implement / review / verify workflow, especially in repos with an AGENTS.md contract. For a heavier multi-agent standards-and-spec review of a whole branch or PR, use the separate code-review skill instead.
 ---
 
 # Review a Change

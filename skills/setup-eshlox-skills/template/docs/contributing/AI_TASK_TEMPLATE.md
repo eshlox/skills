@@ -47,6 +47,6 @@ Use this template for a new task. Remove sections that do not apply. Do not leav
 
 Read `AGENTS.md` and `docs/README.md`. Inspect the repository before proposing a solution.
 
-For a clear, bounded task, state the smallest approach and proceed. For ambiguous or material work, use the `shape-change` skill, ask only high-value questions, compare credible options, recommend one, and wait for approval before editing.
+For a clear, bounded task, state the smallest approach and proceed. For ambiguous or material work, use the `plan-change` skill, ask only high-value questions, compare credible options, recommend one, and wait for approval before editing.
 
 Implement only the approved scope. Use the `verify-change` skill before declaring completion.
