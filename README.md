@@ -21,6 +21,20 @@ specialist skills), marked by relationship (own / depend / fork / built-in). It
 doubles as the install script and the update loop: run it to install, re-run it
 to update.
 
+## Skills
+
+Six skills. The first four are a workflow loop (plan the change, build it, review
+it, prove it); the last two are utilities you reach for as needed.
+
+| Skill | What it does | When to use |
+| ----- | ------------ | ----------- |
+| `plan-change` | Shapes an ambiguous or material change before any code: restates the goal, compares credible options, recommends one, defines acceptance criteria, then stops for sign-off. | A request is non-trivial or unclear (new feature, public API, schema, dependency, architecture, security, migration). Skip for tiny edits. |
+| `implement-change` | Builds an approved or clearly-scoped change as a surgical diff with focused tests and updated docs, no scope creep. | Once the direction is settled and you are actually writing code. |
+| `review-change` | Reviews a finished change against the task and the operating contract: scope creep, correctness, security, simplicity, tests, docs. Reports findings only. | Before you push a change. For a whole-branch or PR review, use `code-review` instead. |
+| `verify-change` | Maps every acceptance criterion and risk to a test, command, or check, runs the required quality gates, and reports the evidence. | Before claiming a change is done, passing, secure, or faster. |
+| `evaluate-dependency` | Weighs native APIs, a small local implementation, an existing dependency, and a new library, then recommends one with the trade-offs. | Whenever adding, replacing, upgrading, or removing a dependency, before touching a manifest or lockfile. |
+| `setup-eshlox-skills` | Installs or updates the always-on operating contract (`AGENTS.md`) and the `docs/` scaffold in a project. | Setting up a new repo, or pulling later baseline updates. |
+
 ## Naming and namespacing
 
 Agent skills install into a flat, per-agent directory keyed by a bare `name`;
