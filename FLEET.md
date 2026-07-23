@@ -27,8 +27,8 @@ pnpm dlx skills add -g eshlox/skills
 ```
 
 Installs: `plan-change`, `implement-change`, `review-change`, `verify-change`,
-`evaluate-dependency`, and `setup-eshlox-skills`. These are absorbed, not
-borrowed: I own them and never sync them from anyone.
+`evaluate-dependency`, `product-review`, and `setup-eshlox-skills`. These are
+absorbed, not borrowed: I own them and never sync them from anyone.
 
 ## 2. Depend: general engineering (borrow globally, cherry-pick)
 
@@ -44,6 +44,12 @@ pnpm dlx skills add -g anthropics/skills --list        # browse, then add specif
 # general engineering skills, TypeScript-leaning
 pnpm dlx skills add -g mattpocock/skills --list        # e.g. diagnosing-bugs fills my debugging gap
 
+# animation and design-engineering skills (Emil Kowalski)
+pnpm dlx skills add -g emilkowalski/skills --list      # e.g. emil-design-eng, apple-design, animation-vocabulary
+
+# direct, action-first response style, always-on via AGENTS.md
+pnpm dlx skills add -g ayghri/i-have-adhd
+
 # optional specialist security (confirm each repo's install method)
 pnpm dlx skills add -g semgrep/skills
 pnpm dlx skills add -g trailofbits/skills
@@ -53,6 +59,8 @@ pnpm dlx skills add -g trailofbits/skills
 | ------ | ------- | ---- |
 | `anthropics/skills` | broad general capabilities | cherry-pick; some overlap the built-ins |
 | `mattpocock/skills` | debugging, TS/engineering | `diagnosing-bugs` fills my one real gap |
+| `emilkowalski/skills` | animation and design-engineering | cherry-pick; upstream documents `npx skills@latest add`, the same CLI |
+| `ayghri/i-have-adhd` | direct, action-first response style | adopted as the default response style in the `AGENTS.md` core block, so it applies always, not only when the skill loads |
 | `semgrep/skills`, `trailofbits/skills` | specialist security | optional; may install as plugins |
 
 ## 3. Depend: stack packs (borrow PER PROJECT, not global)

@@ -23,8 +23,8 @@ to update.
 
 ## Skills
 
-Six skills. The first four are a workflow loop (plan the change, build it, review
-it, prove it); the last two are utilities you reach for as needed.
+Seven skills. The first four are a workflow loop (plan the change, build it, review
+it, prove it); the rest are utilities you reach for as needed.
 
 | Skill | What it does | When to use |
 | ----- | ------------ | ----------- |
@@ -33,6 +33,7 @@ it, prove it); the last two are utilities you reach for as needed.
 | `review-change` | Reviews a finished change against the task and the operating contract: scope creep, correctness, security, simplicity, tests, docs. Reports findings only. | Before you push a change. For a whole-branch or PR review, use `code-review` instead. |
 | `verify-change` | Maps every acceptance criterion and risk to a test, command, or check, runs the required quality gates, and reports the evidence. | Before claiming a change is done, passing, secure, or faster. |
 | `evaluate-dependency` | Weighs native APIs, a small local implementation, an existing dependency, and a new library, then recommends one with the trade-offs. | Whenever adding, replacing, upgrading, or removing a dependency, before touching a manifest or lockfile. |
+| `product-review` | Reviews a whole repository and its user-facing surfaces (web, mobile, API, docs, onboarding, settings) and returns an evidence-backed verdict on what to preserve, remove, merge, simplify, fix, add, or standardise, plus a prioritised plan. | Auditing, critiquing, or evaluating a product, its UX, information architecture, or API against best-in-class standards. Not a code lint or visual-design pass. |
 | `setup-eshlox-skills` | Installs or updates the always-on operating contract (`AGENTS.md`) and the `docs/` scaffold in a project. | Setting up a new repo, or pulling later baseline updates. |
 
 ## Naming and namespacing
@@ -88,6 +89,7 @@ skills/                          # repo root (eshlox/skills)
 │   ├── evaluate-dependency/SKILL.md
 │   ├── review-change/SKILL.md
 │   ├── verify-change/SKILL.md
+│   ├── product-review/SKILL.md
 │   └── setup-eshlox-skills/
 │       ├── SKILL.md             # interactive explore -> propose -> confirm -> write
 │       └── template/            # AGENTS.md, .claude/, docs/ starting files

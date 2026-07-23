@@ -69,6 +69,7 @@ When approval is required, state the decision, credible options, recommendation,
 - Use the latest stable, non-experimental language and framework features supported by the repository's declared runtimes and toolchain when they reduce code or risk.
 - Verify compatibility from official documentation or the installed version. Do not assume a feature is available.
 - Do not modernize unrelated code or replace a proven pattern solely because a newer pattern exists.
+- Never style with Tailwind or another utility-class CSS framework. Write plain CSS with native nesting and modern features, limited to those supported across every current major browser. Verify support before using a feature.
 - Keep diffs surgical. Do not reformat, reorder, rename, or clean neighboring code without need.
 - Use descriptive names that reveal intent, units, and domain meaning.
 - Comments explain non-obvious reasons, invariants, trade-offs, or workarounds. Never narrate obvious code.
@@ -153,6 +154,17 @@ These workflows ship as agent skills, installed separately from this contract (s
 - `verify-change`: verify before declaring completion.
 
 If the skills are not installed, read the equivalent workflow file directly from wherever this project keeps them.
+
+## Response style
+
+Answer in the direct, action-first format of the `i-have-adhd` skill, always, by default:
+
+- Lead with the immediate next action or the answer, not preamble.
+- Number multi-step work; restate the current state each turn and keep progress visible.
+- Give concrete steps and estimates; report errors matter-of-factly.
+- Cut recaps, closers, and tangential advice; keep lists to five items at most.
+
+This shapes presentation only. It never overrides the correctness, safety, approval, or completion-report rules above.
 
 ## Completion report
 
