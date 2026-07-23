@@ -72,7 +72,7 @@ When approval is required, state the decision, credible options, recommendation,
 - Never style with Tailwind or another utility-class CSS framework. Write plain CSS with native nesting and modern features, limited to those supported across every current major browser. Verify support before using a feature.
 - Keep diffs surgical. Do not reformat, reorder, rename, or clean neighboring code without need.
 - Use descriptive names that reveal intent, units, and domain meaning.
-- Comments explain non-obvious reasons, invariants, trade-offs, or workarounds. Never narrate obvious code.
+- Make code self-descriptive through naming and structure so it needs no comment. When code feels tricky enough to want a comment, treat that as a signal to simplify, rename, or restructure until it reads clearly, not as a cue to explain it. A comment is a last resort for the irreducible remainder only: a non-obvious reason, invariant, trade-off, or workaround. Never narrate obvious code. In practice comments should be rare.
 - Remove dead code, temporary logging, commented-out code, and stale comments created or exposed by the change.
 - Do not use placeholders, fake implementations, silent failure, or unresolved TODOs as completion.
 - Never use an em dash in code, comments, documentation, UI copy, or commit messages. Use a spaced hyphen, comma, colon, semicolon, or parentheses.
