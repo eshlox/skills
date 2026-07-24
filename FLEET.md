@@ -27,8 +27,9 @@ pnpm dlx skills add -g eshlox/skills
 ```
 
 Installs: `plan-change`, `implement-change`, `review-change`, `verify-change`,
-`evaluate-dependency`, `product-review`, and `setup-eshlox-skills`. These are
-absorbed, not borrowed: I own them and never sync them from anyone.
+`evaluate-dependency`, `product-review`, `article-editor`, and
+`setup-eshlox-skills`. These are absorbed, not borrowed: I own them and never sync
+them from anyone.
 
 ## 2. Depend: general engineering (borrow globally, cherry-pick)
 

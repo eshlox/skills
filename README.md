@@ -23,7 +23,7 @@ to update.
 
 ## Skills
 
-Seven skills. The first four are a workflow loop (plan the change, build it, review
+Eight skills. The first four are a workflow loop (plan the change, build it, review
 it, prove it); the rest are utilities you reach for as needed.
 
 | Skill | What it does | When to use |
@@ -35,6 +35,7 @@ it, prove it); the rest are utilities you reach for as needed.
 | `evaluate-dependency` | Weighs native APIs, a small local implementation, an existing dependency, and a new library, then recommends one with the trade-offs. | Whenever adding, replacing, upgrading, or removing a dependency, before touching a manifest or lockfile. |
 | `product-review` | Reviews a whole repository and its user-facing surfaces (web, mobile, API, docs, onboarding, settings) and returns an evidence-backed verdict on what to preserve, remove, merge, simplify, fix, add, or standardise, plus a prioritised plan. | Auditing, critiquing, or evaluating a product, its UX, information architecture, or API against best-in-class standards. Not a code lint or visual-design pass. |
 | `setup-eshlox-skills` | Installs or updates the always-on operating contract (`AGENTS.md`) and the `docs/` scaffold in a project. | Setting up a new repo, or pulling later baseline updates. |
+| `article-editor` | Line-edits draft long-form prose (articles, blog posts, essays, READMEs, newsletters) for clarity and a human voice without rewriting it or losing the author's voice. | Improving, polishing, humanising, tightening, or reviewing a written draft. Not a code or product review. |
 
 ## Naming and namespacing
 
@@ -90,6 +91,9 @@ skills/                          # repo root (eshlox/skills)
 │   ├── review-change/SKILL.md
 │   ├── verify-change/SKILL.md
 │   ├── product-review/SKILL.md
+│   ├── article-editor/          # line-edit long-form prose
+│   │   ├── SKILL.md
+│   │   └── references/          # editing-rules.md, ai-tells.md
 │   └── setup-eshlox-skills/
 │       ├── SKILL.md             # interactive explore -> propose -> confirm -> write
 │       └── template/            # AGENTS.md, .claude/, docs/ starting files
